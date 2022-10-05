@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life In Weeks</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    
+    <video autoplay muted loop id="myVideo">
+      <source src="assets/backgroundVid2.mp4" type=video/mp4>
+    </video>
+<!-- Date Picker -->
+    <div class="picker-container">
+      <label for="start">Birthday</label>
+
+      <input
+        type="date"
+        id="start"
+        name="birthday"
+        value="1994-02-02"
+        class = "birthday-picker"
+        onblur = "birthdayUpdate()"
+      />
+    </div>
+
+<!-- Life in weeks -->
+    <div class="container-fluid">
+      <div class="clock">
+        <span class="clock-time"></span>
+      </div>
+    </div>
+<!-- Quote -->
+    <div>
+      <h3 class="quote">"Make this week count"</h3>
+    </div>
+<!-- Countdown -->
+    <div class="countdown">
+      <span class="countdown-timer"></span>
+    </div>
+
+<!--Age Picker-->
+<div class="picker-container">
+  <label for="agePicker">Max Age</label>
+  <select list="agePicker" type="text" id="agePickerInput" />
+  </select>
+</div>
+<!-- Weeks Grid -->
+    <div class="weeks-background">
+      <div class="weeks-area">
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/dayjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/plugin/duration.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/plugin/utc.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/plugin/timezone.min.js"></script>
+
+    <script src="main.js"></script>
+  </body>
+  <footer>
+    <p>Stay Motivated</p>
+  </footer>
+</html>

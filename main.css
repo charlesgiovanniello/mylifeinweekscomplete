@@ -1,0 +1,228 @@
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("./assets/fonts/Montserrat-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-ThinItalic";
+  src: url("./assets/fonts/Montserrat-ThinItalic.ttf") format("truetype");
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.picker-container {
+  background-color: #3ab89a;
+  text-align: center;
+}
+
+#myVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#canvas {
+  height: auto;
+}
+
+/* Desktop */
+@media screen and (min-width: 1000px) {
+  .weeks-background {
+    background-color: rgba(75, 59, 134, 0.6);
+    min-height: cover;
+    width: auto;
+    overflow: scroll;
+    
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 701px) and (max-width: 1074px) {
+  .weeks-background {
+    background-color: rgba(75, 59, 134, 0.6);
+    min-height: cover;
+    width: auto;
+    overflow: scroll;
+    zoom: 0.7;
+  }
+}
+/*Mobile */
+@media screen and (max-width: 700px) {
+  .weeks-background {
+    background-color: rgba(75, 59, 134, 0.6);
+
+    min-height: cover;
+    width: auto;
+    overflow: scroll;
+    zoom: 0.38;
+  }
+}
+
+/* Tiny Mobile */
+@media screen and (max-width: 405px) {
+  .weeks-background {
+    background-color: rgba(75, 59, 134, 0.6);
+    min-height: cover;
+    width: auto;
+    overflow: scroll;
+    zoom: 0.28;
+  }
+}
+
+/* Small Mobile */
+@media screen and (min-width:406) and (max-width: 700px) {
+  .weeks-background {
+    background-color: rgba(75, 59, 134, 0.6);
+    min-height: cover;
+    width: auto;
+    overflow: scroll;
+    zoom: 0.3;
+  }
+}
+.weeks-area {
+  width: 1040px;
+  height: auto;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color:rgba(75, 59, 134, 0.6); */
+}
+
+.clock {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Desktop */
+@media screen and (min-width: 1075px) {
+  .clock-time {
+    font-family: "Montserrat-Light";
+    font-size: 150px;
+    color: #3ab89a;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 701px) and (max-width:1074px) {
+  .clock-time {
+    font-family: "Montserrat-Light";
+    font-size: 150px;
+    color: #3ab89a;
+  }
+}
+
+/*Mobile */
+@media screen and (min-width:451px) and (max-width: 700px) {
+  .clock-time {
+    font-family: "Montserrat-Light";
+    font-size: 100px;
+    color: #3ab89a;
+  }
+}
+
+/*Tiny Mobile */
+@media screen and (max-width:450px) {
+  .clock-time {
+    font-family: "Montserrat-Light";
+    font-size: 75px;
+    color: #3ab89a;
+  }
+}
+
+.countdown {
+  margin-top: 50px;
+  text-align: center;
+  background-color: rgb(152, 210, 206);
+}
+
+
+/*Desktop */
+@media screen and (min-width: 1075px) {
+  .countdown-timer {
+    font-family: "Arial";
+    font-size: 50px;
+    text-align: center;
+    color: #3c5066;
+  }
+}
+
+/*Tablet */
+@media screen and (min-width: 701px) and (max-width:1074px) {
+  .countdown-timer {
+    font-family: "Arial";
+    font-size: 50px;
+    text-align: center;
+    color: #3c5066;
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 700px) {
+  .countdown-timer {
+    font-family: "Arial";
+    font-size: 30px;
+    text-align: center;
+    color: #3c5066;
+  }
+}
+
+.timer-pomodoro {
+  font-family: "Arial";
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #3c5066;
+}
+/*Desktop */
+@media screen and (min-device-width: 1075px) {
+  .quote {
+    text-align: center;
+    margin-top: 15px;
+    font-family: "Montserrat-ThinItalic";
+    font-size: 80px;
+    color: #ffffff;
+  }
+}
+
+/*Tablet */
+@media screen and (min-width: 701px) and (max-width:1074px) {
+  .quote {
+    text-align: center;
+    margin-top: 15px;
+    font-family: "Montserrat-ThinItalic";
+    font-size: 80px;
+    color: #ffffff;
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 700px) {
+  .quote {
+    text-align: center;
+    font-family: "Montserrat-ThinItalic";
+    font-size: 60px;
+    color: #ffffff;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1.5px;
+  background-color: rgb(10, 38, 53);
+  color: white;
+}
+p{
+  font-size: 12px;
+  padding-top: 10px;
+  font-family: "Montserrat-ThinItalic";
+  color:antiquewhite;
+}
